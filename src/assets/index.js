@@ -5,6 +5,7 @@ import mobile from './mobile.png'
 import web from './web.png'
 import menu from './menu.svg'
 import close from "./close.svg";
+import logo from './logo.svg'
 
 import css from "./tech/css.png";
 import flutter from "./tech/flutter.png";
@@ -35,6 +36,7 @@ export {
     git,
     html,
     javascript,
+    logo,
     mongodb,
     nodejs,
     python,

@@ -16,22 +16,22 @@ import {
     tailwind,
     typescript,
     threejs,
-} from "./assets";
+} from "../assets";
 
 export const navLinks = [
-    {
-        id: "about",
-        name: "About",
-    },
-    {
-        id: "projects",
-        name: "Projects",
-    },
-    {
-        id: "contact",
-        name: "Contact",
-    }
-]
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
 
 const services = [
   {
