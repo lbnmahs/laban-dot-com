@@ -5,6 +5,7 @@ import Loader from '../Loader'
 
 const Car = ({ isMobile }) => {
   const car = useGLTF('./car/scene.gltf')
+  
   return (
     <mesh>
       <hemisphereLight intensity={0.15} />
