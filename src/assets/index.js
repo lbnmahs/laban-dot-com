@@ -1,4 +1,5 @@
 import backend from './backend.png'
+import uiux from './uiux.png'
 import github from './github.png'
 import heroBg from './herobg.png'
 import mobile from './mobile.png'
@@ -45,4 +46,5 @@ export {
     tailwind,
     typescript,
     threejs,
+    uiux
 }

@@ -16,6 +16,7 @@ import {
     tailwind,
     typescript,
     threejs,
+    uiux
 } from "../assets";
 
 export const navLinks = [
@@ -46,6 +47,10 @@ const services = [
     title: "Blockchain Developer",
     icon: backend,
   },
+  {
+    title: "UI/UX Designer",
+    icon: uiux,
+  }
 ]
 
 const technologies = [
