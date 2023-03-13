@@ -1,22 +1,25 @@
 import {
-    backend,
-    mobile,
-    web,
-    css,
-    flutter,
-    figma,
-    git,
-    html,
-    javascript,
-    mongodb,
-    nodejs,
-    python,
-    reactjs,
-    redux,
-    tailwind,
-    typescript,
-    threejs,
-    uiux
+  backend,
+  mobile,
+  web,
+  css,
+  flutter,
+  figma,
+  git,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  python,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  threejs,
+  uiux,
+  carrent,
+  jobit,
+  tripguide,
 } from "../assets";
 
 export const navLinks = [
@@ -116,26 +119,26 @@ const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+    name: "Mwara Njambi",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://randomuser.me/api/portraits/women/30.jpg",
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+    name: "Burton Mandela",
     designation: "COO",
     company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://randomuser.me/api/portraits/men/54.jpg",
   },
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    name: "Paradise Odinga",
     designation: "CTO",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: "https://randomuser.me/api/portraits/women/62.jpg",
   },
 ];
 
@@ -158,7 +161,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    // image: carrent,
+    image: carrent,
     source_code_link: "https://github.com/",
   },
   {
@@ -179,7 +182,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    // image: jobit,
+    image: jobit,
     source_code_link: "https://github.com/",
   },
   {
@@ -200,7 +203,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    // image: tripguide,
+    image: tripguide,
     source_code_link: "https://github.com/",
   },
 ];

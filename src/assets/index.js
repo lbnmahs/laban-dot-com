@@ -23,28 +23,35 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import carrent from "./carrent.png";
+import jobit from "./jobit.png";
+import tripguide from "./tripguide.png";
+
 export {
-    backend,
-    github,
-    heroBg,
-    mobile,
-    web,
-    menu,
-    close,
-    css,
-    flutter,
-    figma,
-    git,
-    html,
-    javascript,
-    logo,
-    mongodb,
-    nodejs,
-    python,
-    reactjs,
-    redux,
-    tailwind,
-    typescript,
-    threejs,
-    uiux
-}
+  backend,
+  github,
+  heroBg,
+  mobile,
+  web,
+  menu,
+  close,
+  css,
+  flutter,
+  figma,
+  git,
+  html,
+  javascript,
+  logo,
+  mongodb,
+  nodejs,
+  python,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  threejs,
+  uiux,
+  carrent,
+  jobit,
+  tripguide,
+};
