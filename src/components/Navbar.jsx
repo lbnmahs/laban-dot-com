@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { styles } from "../styles"
 import { navLinks } from "../constants"
-import { logo, menu, close } from "../assets"
+import { logo, menu, close, cv } from "../assets"
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -23,7 +23,7 @@ const Navbar = () => {
           <p className='text-white text-[30px] font-bold italic cursor-pointer'>LBNMAHS</p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row justify-center items-center gap-10'>
           {
             navLinks.map((link) => (
               <li
@@ -35,6 +35,9 @@ const Navbar = () => {
               </li>
             ))
           }
+          <a href={cv} download="Laban-Mahihu-CV" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl' >
+            Download Resume
+          </a>
         </ul>
 
         {/* Mobile NavBar */}
@@ -61,6 +64,9 @@ const Navbar = () => {
                   </li>
                 ))
               }
+              <a href={cv} download="Laban-Mahihu-CV" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold rounded-xl' >
+                Download Resume
+              </a>
             </ul>
           </div>
         </div>

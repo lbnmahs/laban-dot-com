@@ -7,6 +7,7 @@ import web from './web.png'
 import menu from './menu.svg'
 import close from "./close.svg";
 import logo from './logo.svg'
+import cv from './labanMahihuCv.pdf'
 
 import css from "./tech/css.png";
 import flutter from "./tech/flutter.png";
@@ -29,6 +30,7 @@ import tripguide from "./tripguide.png";
 
 export {
   backend,
+  cv,
   github,
   heroBg,
   mobile,
