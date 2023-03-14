@@ -20,7 +20,7 @@ const Car = ({ isMobile }) => {
       />
       <primitive 
         object={car.scene}
-        scale={isMobile ? 1 : 2}
+        scale={isMobile ? 1.3 : 2}
         position={isMobile ? [0, -3, -2.2] :[0, -3.75, -1.5]}
         // rotation={[-0.01, -0.2, -0.1]}
       />
@@ -51,7 +51,7 @@ const CarCanvas = () => {
       <Suspense fallback={<Loader />}>
         <OrbitControls
           autoRotate
-          autoRotateSpeed={1}
+          autoRotateSpeed={0.7}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
