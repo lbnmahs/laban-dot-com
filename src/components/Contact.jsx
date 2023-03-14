@@ -2,11 +2,52 @@ import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
-import { EarthCanvas } from './canvas'
+import { StatueCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../animations/motion'
 
 const Contact = () => {
+  const formRef = useRef()
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
+  const [loading, setLoading] = useState(false)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs.send(
+      import.meta.env.VITE_EMAIL_SERVICE_ID, 
+      import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: 'Laban',
+        from_email: form.email,
+        to_emails: 'labanmahs2002@gmail.com',
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAIL_PUBLIC_ID
+    ).then(() => {
+      setLoading(false)
+      alert('Thank you, I will get back to you shortly.')
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      })
+    }), (error) => {
+      setLoading(false)
+      alert('Something went wrong, please try again later.')
+      console.log(error.text)
+    }
+  }
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
 
@@ -68,7 +109,7 @@ const Contact = () => {
          variants={slideIn('right', 'tween', 0.2, 1)} 
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        <StatueCanvas />
       </motion.div>
     </div>
   )
