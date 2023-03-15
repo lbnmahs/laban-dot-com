@@ -24,9 +24,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import mellow from "./mellow.png";
+import seavents from "./seavents.png";
+import teremsha from "./teremsha.png";
 
 export {
   backend,
@@ -53,7 +53,7 @@ export {
   typescript,
   threejs,
   uiux,
-  carrent,
-  jobit,
-  tripguide,
+  mellow,
+  seavents,
+  teremsha,
 };

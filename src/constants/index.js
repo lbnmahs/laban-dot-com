@@ -17,9 +17,9 @@ import {
   typescript,
   threejs,
   uiux,
-  carrent,
-  jobit,
-  tripguide,
+  mellow,
+  seavents,
+  teremsha,
 } from "../assets";
 
 export const navLinks = [
@@ -144,9 +144,30 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Mellow AI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "It is a chatbot that can produces AI generated responses from the user input. It uses the Codex model from OpenAI's API to generate the responses. The frontend is built using Vite.js and Tailwind CSS.",
+    tags: [
+      {
+        name: "openaiAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mellow,
+    source_code_link: "https://github.com/lbnmahs/Mellow",
+  },
+  {
+    name: "Seavents Event Planner",
+    description:
+      "Web application that enables users to plan events and share them with their friends and family. It is built using the MERN stack. It also uses the Google Maps API to suggest a location of the event.",
     tags: [
       {
         name: "react",
@@ -157,54 +178,33 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "mernstack",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: seavents,
+    source_code_link: "https://github.com/lbnmahs/project-seavents",
   },
   {
-    name: "Job IT",
+    name: "Teremsha Liquor Store",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This is an online liquor store built using Next.js and Sanity.io. Users can browse through the store's products, add them to their cart, and checkout. The store owner can add, edit, and delete products from the store",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sanityio",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: teremsha,
+    source_code_link: "https://github.com/lbnmahs/teremsha-liquor-store",
   },
 ];
 
