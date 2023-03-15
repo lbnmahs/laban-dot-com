@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../animations/motion'
+ import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const formRef = useRef()
@@ -35,7 +37,16 @@ const Contact = () => {
       import.meta.env.VITE_EMAIL_PUBLIC_ID
     ).then(() => {
       setLoading(false)
-      alert('Thank you, I will get back to you shortly.')
+      toast.success('Thank you, I will get back to you shortly', {
+        position: "top-center",
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
       setForm({
         name: "",
         email: "",
@@ -43,7 +54,16 @@ const Contact = () => {
       })
     }), (error) => {
       setLoading(false)
-      alert('Something went wrong, please try again later.')
+      toast.error('Something went wrong, please try again later', {
+        position: "top-center",
+        autoClose: 6000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
       console.log(error.text)
     }
   }
@@ -54,6 +74,7 @@ const Contact = () => {
         variants={slideIn('left', 'tween', 0.2, 1)} 
         className='bg-black-100 p-8 rounded-2xl'
       >
+        <ToastContainer />
         <p class={`${styles.sectionSubText}`}>Get In Touch</p>
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
 
