@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
-import { StatueCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../animations/motion'
 
@@ -91,7 +90,7 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               rows='7' 
-              name='name' 
+              name='message' 
               autoComplete='off'
               value={form.message} 
               onChange={handleChange} 
@@ -107,13 +106,6 @@ const Contact = () => {
         </form>
 
       </motion.div>
-
-      {/* <motion.div
-         variants={slideIn('right', 'tween', 0.2, 1)} 
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <StatueCanvas />
-      </motion.div> */}
     </div>
   )
 }
